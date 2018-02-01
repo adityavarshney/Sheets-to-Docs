@@ -5,8 +5,8 @@ Random scripts. <br />
 Creates Google Docs for each Applicant on a Google Sheet. Each G-Doc contains the applicant's name and information. This is designed to make interviews easier for organizations conducting lots of interviews. <br /> <br />
 Requirements:
 <ul>
-  <li> Google Sheets file must have 1 row of headers. </li>
-  <li> The file's first column must be name information </li>
+  <li> The top row of the Google Sheets file must contain column headers. </li>
+  <li> The file's first column must have Name information (or some form of candidate ID). This will be used when naming the file made for that candidate. </li>
   <li> The root drive must have enough capacity for an additional folder and as many Google Docs as there are names in the spreadsheet.
 </ul>
 <br />
