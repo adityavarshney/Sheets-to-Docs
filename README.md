@@ -1,7 +1,7 @@
 # Scripts
 Random scripts. <br />
 
-## `GS code for google docs for interviews.js`
+## `interview_gdoc_creator.js`
 Creates Google Docs for each Applicant on a Google Sheet. Each G-Doc contains the applicant's name and information. This is designed to make interviews easier for organizations conducting lots of interviews. <br /> <br />
 Requirements:
 <ul>
@@ -20,3 +20,4 @@ Instructions:
   <li> In the page containing the spreadsheet, a dialog box will open, asking for details regarding the interviews being conducted. This is to construct a folder with an appropriate name. (The folder will be named "Interviews " + whatever details you describe). </li>
   <li> Check the Google Drive root to see the new folder created. All files will be in that folder, named using the applicants' names. </li>
 </ul>
+Designed for use by ANova @ UC Berkeley, Spring 2018.
