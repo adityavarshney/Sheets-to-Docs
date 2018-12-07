@@ -1,6 +1,4 @@
-# Scripts
-
-## `interview_gdoc_creator.js`
+# `interview_gdoc_creator.js`
 Creates Google Docs for each row on a Google Sheet. Useful for deliberating between candidates who sign up or apply using Google Forms. Each row contains the applicant's name and application information. The script converts the row into a separate Google Doc that can be the candidate's interview profile, the ideal place to take interview notes and centralize all info on the candidate. <br /> <br />
 Requirements:
 <ul>
