@@ -5,7 +5,7 @@ Creates Google Docs for each row on a Google Sheet. Useful for deliberating betw
 Requirements:
 <ul>
   <li> The top row of the Google Sheets file must contain column headers. </li>
-  <li> The file's first column must have some unique **Name** information (or some form of candidate ID). This will be used when naming the file made for that candidate. </li>
+  <li> The file's first column must have some unique Name information (or some form of candidate ID). This will be used when naming the file made for that candidate. </li>
   <li> The root drive must have enough capacity for an additional folder and room for as many Google Docs as there are names in the spreadsheet.
 </ul>
 <br />
@@ -19,4 +19,6 @@ Instructions:
   <li> In the page containing the spreadsheet, a dialog box will open, asking for details regarding the interviews being conducted. The  information entered here will be used to build a folder with an appropriate name. (The folder will be named "Interviews " + whatever details you describe). </li>
   <li> Check the Google Drive root (**My Drive**) to see the new folder created. All files will be in that folder and will be named using the applicants' names. </li>
 </ul>
-Designed for use by ANova @ Berkeley, Spring 2018, a student-run volunteering organization that sends quality CS materials and mentorship resources to students at under-resourced high schools and middle schools in the Bay Area. See more at: https://berkeleyanova.org
+Designed for use by ANova @ Berkeley, Spring 2018. <br /> 
+ANova is a student-run volunteering organization through which dedicated mentors get to teach CS to high schoolers and middle schoolers in the Bay Area with a focus on assisting under-resourced education programs, emphasizing the value of diversity in tech, and preparing historically underrepresented students for post-secondary education. <br />
+Learn more at: https://berkeleyanova.org
