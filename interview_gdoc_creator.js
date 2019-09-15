@@ -14,7 +14,7 @@ function createDocs() {
   var yearAndSem = Browser.inputBox("Insert current year followed by semester: (Spring 2017, Fall 2018, Fall 2052, etc.)").trim();
   var dir = DriveApp.createFolder("Interviews " + yearAndSem);
   
-  for (var i = data.length; i <= data.length; i++) {
+  for (var i = Math.min(2, data.length); i <= data.length; i++) {
     var candidateName = sheet.getRange(i, 1).getValues()[0][0].trim();
     var doc = DocumentApp.create(candidateName + " interview profile " + yearAndSem);
     var body = doc.getBody();
