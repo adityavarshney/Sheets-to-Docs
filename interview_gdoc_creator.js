@@ -14,7 +14,7 @@ function createDocs() {
   var yearAndSem = Browser.inputBox("Insert current year followed by semester: (Spring 2017, Fall 2018, Fall 2052, etc.)").trim();
   var dir = DriveApp.createFolder("Interviews " + yearAndSem);
   
-  for (var i = Math.min(2, data.length); i <= data.length; i++) {
+  for (var i = data.length; i <= data.length; i++) {
     var candidateName = sheet.getRange(i, 1).getValues()[0][0].trim();
     var doc = DocumentApp.create(candidateName + " interview profile " + yearAndSem);
     var body = doc.getBody();
@@ -22,14 +22,14 @@ function createDocs() {
       for (var j = Math.min(0, data[i].length); j < data[i].length; j++) { 
         var header = body.appendParagraph(data[0][j]);
         header.setHeading(DocumentApp.ParagraphHeading.HEADING3);
-        body.appendParagraph(data[i - 1][j]);
+        body.appendParagraph("" + data[i - 1][j]);
         body.appendParagraph("");
       }
     } else { // edge case, last row was wacky b/c rows and cols are slightly differently indexed
       for (var j = Math.min(0, data[i - 1].length); j < data[i - 1].length; j++) { 
         var header = body.appendParagraph(data[0][j]);
         header.setHeading(DocumentApp.ParagraphHeading.HEADING3);
-        body.appendParagraph(data[i - 1][j]);
+        body.appendParagraph("" + data[i - 1][j]);
         body.appendParagraph("");
       }            
     }
